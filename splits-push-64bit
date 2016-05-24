@@ -1,0 +1,15 @@
+#!/bin/bash
+chmod 755 *x86*
+chown owtuser1:owtuser1 *x86*
+\rm splits-list
+ls -1 *x86* > splits-list
+ls -lh *x86* >  Repository-splits-list
+ls -lh /data/Tarballs/*.tar >> Repository-splits-list
+for split in $(cat splits-list)
+
+  do 
+      mv $split /home/owt/priv/pickup
+      sleep 300
+  done
+mv Repository-splits-list /home/owt/priv/pickup
+mv *x86* /home/owt/priv/pickup

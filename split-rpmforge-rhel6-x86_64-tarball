@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /data/Tarballs/
+
+split --bytes=1024m -d rpmforge-rhel6-x86_64.tar rpmforge-rhel6-x86_64
+
+mv rpmforge-rhel6-x86_640* /data/Tarballs/Splits

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /data/Tarballs/
+
+split --bytes=1024m -d CentOS-5_9-OS-x86_64.tar CentOS-5_9-OS-x86_64
+
+mv CentOS-5_9-OS-x86_640* /data/Tarballs/Splits
+mv CentOS-5_9-OS-x86_641* /data/Tarballs/Splits

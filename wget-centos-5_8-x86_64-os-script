@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /data/CentOS-5_8-x86_64/os
+
+rm -rf *
+
+wget -ncp -r http://mirror.anl.gov/pub/centos/5/os/x86_64/

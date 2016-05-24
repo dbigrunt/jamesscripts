@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /data/epel-x86_64/epel-rhel5/
+rm -rf *
+wait 15
+
+wget -ncp -r http://dl.fedoraproject.org/pub/epel/5/x86_64/

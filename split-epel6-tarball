@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /data/Tarballs/
+
+split --bytes=1024m -d Epel-Rhel6-x86_64.tar Epel-Rhel6-x86_64
+
+mv Epel-Rhel6-x86_640* /data/Tarballs/Splits
+mv Epel-Rhel6-x86_641* /data/Tarballs/Splits

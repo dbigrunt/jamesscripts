@@ -1,0 +1,11 @@
+#!/bin/bash
+chmod 755 *i386*
+chown owtuser1:owtuser1 *i386*
+ls -1 *i386* > splits-list
+for split in $(cat splits-list)
+
+  do 
+      mv $split /home/owt/priv/pickup
+      sleep 300
+   
+  done

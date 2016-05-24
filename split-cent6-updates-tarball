@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /data/Tarballs/
+
+split --bytes=1024m -d CentOS-6-x86_64-updates.tar CentOS-6-x86_64-updates
+
+mv CentOS-6-x86_64-updates0* /data/Tarballs/Splits
+mv CentOS-6-x86_64-updates1* /data/Tarballs/Splits

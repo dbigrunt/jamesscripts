@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /data/spacewalk/spacewalk-1_9-client-rhel-6-x86_64/spacewalk.redhat.com
+rm -rf * 
+wait 5
+
+cd /data/spacewalk/spacewalk-1_9-client-rhel-6-x86_64
+
+rmdir spacewalk.redhat.com
+
+wget -ncp -r http://spacewalk.redhat.com/yum/1.9-client/RHEL/6/x86_64/

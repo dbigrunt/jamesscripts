@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd /data/REMI-repo/
+rm -rf *
+wait 15
+
+wget -ncp -r http://rpms.famillecollet.com/enterprise/6/remi/x86_64/
+
+cd /data/REMI-repo/rpms.famillecollet.com/enterprise/6
+
+tar -cvf remi-el6-x86_64.tar remi/
+
+clamscan remi-el6-x86_64.tar >> /data/Tarballs/clamscan-remi-x86_64-results
+
+if clamscan remi-el6-x86_64.tar 
+then mv remi-el6-x86_64.tar /home/owt/priv/pickup

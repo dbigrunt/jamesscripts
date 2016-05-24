@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /data/jpackage
+rm -rf *
+wait 30
+cd /data/jpackage/
+
+rmdir mirrors.dotsrc.org
+wget -ncp -r http://mirrors.dotsrc.org/pub/jpackage/6.0/generic/free/
